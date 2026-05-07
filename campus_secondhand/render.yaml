@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: campus-secondhand
+    runtime: python
+    buildCommand: "python init_db.py"
+    startCommand: "HOST=0.0.0.0 python -B app.py"
+    plan: free
